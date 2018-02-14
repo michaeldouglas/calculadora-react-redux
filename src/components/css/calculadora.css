@@ -19,7 +19,7 @@ body, html {
   width:290px;
   border-radius:10px;
   position:relative;
-  top:80px;
+  top:200px;
   left:40%;
   border: solid 1px #FFF;
 }
@@ -55,13 +55,16 @@ body, html {
 }
 
 .button.orange{
-  color:black;
+  color: #fff;
   background-color: #FF9933;
-  border-bottom:black 2px solid;
-  border-top:2px #FF9933 solid;
+  border-bottom: black 2px solid;
+  border-top: 2px #FF9933 solid;
   float: right;
   position: relative;
   right: 0.3rem;
+  font-weight: bold;
+  width: 57px;
+  height: 37px;
 }
 
 .button.black{
@@ -70,15 +73,16 @@ body, html {
   border-bottom:black 2px solid;
   border-top:2px #303030 solid;
   text-align: center;
+  width: 59px;
 }
 
 .boxSomar {
   overflow: hidden;
   margin: 0 auto;
-  width: 192px;
+  width: 210px;
   position: relative;
   top: 26px;
-  left: 38px;
+  left: 28px;
   color: #FFF;
 }
 
