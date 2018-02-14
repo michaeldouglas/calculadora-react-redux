@@ -14,6 +14,7 @@ class App extends Component {
         <section className="box">
           <Route exact path="/" render={() => (
             <Calculadora
+              tipo="1"
               title="Somar"
             />
           )}/>
