@@ -46,7 +46,7 @@ let SomarValor = ({ dispatch }) => {
             ref={node => {
               num2 = node
             }}
-          />
+          /> 
       </p>
       <input 
           type="button"
