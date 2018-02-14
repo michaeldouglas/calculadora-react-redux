@@ -6,6 +6,12 @@ let somar = (num1, num2) => {
   return parseFloat(num1) + parseFloat(num2)
 }
 
+let clearInput = (input) => {
+  if(input.target.value !== "") {
+    input.target.value = ''
+  }
+}
+
 let SomarValor = ({ dispatch }) => {
   let num1, num2
 
@@ -17,6 +23,11 @@ let SomarValor = ({ dispatch }) => {
             className="button black"
             type="text"
             required
+            placeholder="0"
+            defaultValue={num1}
+            onFocus={e => {
+              clearInput(e)
+            }}
             ref={node => {
               num1 = node
             }} 
@@ -28,9 +39,13 @@ let SomarValor = ({ dispatch }) => {
             className="button black"
             type="text"
             required
+            placeholder="0"
+            onFocus={e => {
+              clearInput(e)
+            }}
             ref={node => {
               num2 = node
-            }} 
+            }}
           />
       </p>
       <input 

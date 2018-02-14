@@ -6,12 +6,11 @@ import './css/calculadora.css'
 import Somar from './../containers/SomarValor'
 import ResultadoDaSoma from './../containers/Resultado'
 
-//Components
-
 class App extends Component {
   render() {
     return (
       <div className="bgimg-1 box">
+        <p className="title">Somar</p>
         <ResultadoDaSoma />
         <Somar />
       </div>
